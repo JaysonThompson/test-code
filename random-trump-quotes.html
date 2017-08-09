@@ -5,31 +5,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Random Ridiculous Trump Quotes</title>
 	<style>
+		#quote-container {
+			padding: 15px 25px;
+			color: red;
+			width: 30%;
+		}
 		.hidden{
 			display: none;
 		}
 	</style>
 	<script>
 
-	function randomQuote(){
-
-
-
-	}		
-	function randomSelect(min, max){
-
-		var quotes = document.querySelectorAll('.trump-quote');
+	function getQuotes(){
+		
+		var quote = document.querySelectorAll(".trump-quote");
 		var min = 0;
-		var max = quotes.length;
-		var matchNum =  Math.floor(Math.random() * (max - min)) + min;
+		var max = quote.length;
+		var rndmNumber = Math.floor(Math.random() * (max - min)) + min;
+		var string = quote[rndmNumber].innerHTML;
 
-		var stringArray = [];
+		document.getElementById("quote-container").innerHTML = string;
 
-		for(var i = 0; i < quotes.length; i++){
-			stringArray.push(quotes[matchNum]);
-		} 
-
-		console.log(stringArray[0]);
 	}
 
 	</script>
@@ -73,6 +69,8 @@
 	<p class="trump-quote hidden">
 	I might lie to you like Hillary does all the time, but I'll never lie to Giacomo, okay?
 	</p>
-	<button class="rndm-trump-quotes" onclick="randomSelect();">Choose if you dare!</button>
+	<button onclick="getQuotes();">Try me if you dare</button>
+	<div id="quote-container">
+	</div>
 </body>
 </html>
