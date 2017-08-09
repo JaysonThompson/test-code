@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Form Checker</title>
+	<link rel="stylesheet" href="">
+	<script src="javascripts/regex.js"></script>
+</head>
+<body>
+	<h1>Form Checker</h1>
+	<form>
+		<h3>SSN checker</h3>
+		<input type="text" name="ssn" size="20">
+		<button onclick="checkssn(this.form.ssn.value)">Check SSN</button>
+		<h3>Phone checker</h3>
+		<input type="text" name="phone" size="20">
+		<button onclick="checkPhone(this.form.phone.value)">Check Phone</button>
+	</form>
+</body>
+</html>

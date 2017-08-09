@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Random Ridiculous Trump Quotes</title>
+	<style>
+		.hidden{
+			display: none;
+		}
+	</style>
+	<script>
+
+	function randomQuote(){
+
+
+
+	}		
+	function randomSelect(min, max){
+
+		var quotes = document.querySelectorAll('.trump-quote');
+		var min = 0;
+		var max = quotes.length;
+		var matchNum =  Math.floor(Math.random() * (max - min)) + min;
+
+		var stringArray = [];
+
+		for(var i = 0; i < quotes.length; i++){
+			stringArray.push(quotes[matchNum]);
+		} 
+
+		console.log(stringArray[0]);
+	}
+
+	</script>
+
+</head>
+<body>
+	<h1>Random Ridiculous Trump Quotes</h1>
+	<p class="trump-quote hidden">
+	You know I’m automatically attracted to beautiful — I just start kissing them. It’s like a magnet. Just kiss. I don’t even wait. And when you’re a star, they let you do it. You can do anything. Grab them by the p**sy. You can do anything.
+	</p>
+	<p class="trump-quote hidden">
+	I don’t think anybody knows it was Russia that broke into the DNC. [Clinton’s] saying Russia, Russia, Russia, but I don’t — maybe it was. I mean, it could be Russia, but it could also be China. It could also be lots of other people. It also could be somebody sitting on their bed that weighs 400 pounds, OK?
+	</p>
+	<p class="trump-quote hidden">
+	We won with poorly educated. I love the poorly educated. 
+	</p>
+	<p class="trump-quote hidden">
+	I don't know what hotel this is, but you ought to try turning on the air conditioning or we're not going to get you paid.
+	</p>
+	<p class="trump-quote hidden">
+	I was shocked to hear [Vladimir Putin] mention the N-word. You know what the N-word is. Number one he doesn’t like him and number two he doesn’t respect him. I think he’s going to respect your president if I’m elected and I hope he likes me.
+	</p>
+	<p class="trump-quote hidden">
+	Russia, if you’re listening, I hope you’re able to find the 30,000 emails that are missing. I think you will probably be rewarded mightily by our press.
+	</p>
+	<p class="trump-quote hidden">
+	Actually, I was only kidding. You can get that baby out of here. Don’t worry, I think she really believed me that I love having a baby crying while I’m speaking. That’s OK People don’t understand. That’s OK.
+	</p>
+	<p class="trump-quote hidden">
+	Why can’t we use nuclear weapons?
+	</p>
+	<p class="trump-quote hidden">
+	For evangelicals, for the Christians, for the everybody, for everybody of religion, this will be, may be, the most important election that our country has ever had. And once I get in, I will do my thing that I do very well. And I figure it is probably, maybe the only way I'm going to get to heaven. So I better do a good job.
+	</p>
+	<p class="trump-quote hidden">
+	What do you have to lose by trying something new like Trump?
+	</p>
+	<p class="trump-quote hidden">
+	When Iran, when they circle our beautiful destroyers with their little boats, and they make gestures at our people that they shouldn’t be allowed to make, they will be shot out of the water.
+	</p>
+	<p class="trump-quote hidden">
+	I might lie to you like Hillary does all the time, but I'll never lie to Giacomo, okay?
+	</p>
+	<button class="rndm-trump-quotes" onclick="randomSelect();">Choose if you dare!</button>
+</body>
+</html>
