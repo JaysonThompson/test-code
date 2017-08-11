@@ -1,0 +1,35 @@
+.red.show {
+	color: red;
+}
+
+#display-box {
+	height: 200px;
+	width: 200px;
+	border: 1px solid green;
+	border-radius: 5px;
+	padding: 15px 20px;
+}
+
+.simulated-btn {
+	width: 25%;
+	height: 15px;
+	border-radius: 5px;
+	background-color: gray;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	margin: 15px 0;
+	display: inline-block;
+}
+.nav-item {
+	list-style: none;
+	text-align: center;
+	width: 15%;
+}
+.nav-item:nth-child(odd) {
+	background-color: #eee;
+}
+.nav-item:hover {
+	background-color: blue;
+	color: white;
+}
